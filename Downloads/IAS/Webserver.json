@@ -1,0 +1,59 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "",
+    "Metadata": {
+
+    },
+    "Parameters": {
+      "MyAppVPCCidr": {
+          "Description": "Choose cidr for VPC",
+          "Type": "String"
+      },
+      "Subnet1Cidr": {
+          "Description": "Choose cidr for Subnet1",
+          "Type": "String"
+      },
+      "Subnet2Cidr": {
+          "Description": "Choose cidr for Subnet2",
+          "Type": "String"
+      },
+      "Subnet1AZ": {
+          "Description": "Choose AZ for Subnet1",
+          "Type": "String"
+      },
+      "Subnet2AZ": {
+          "Description": "Choose AZ for Subnet2",
+          "Type": "String"
+      },
+      "WebserverKeyName": {
+          "Description": "Choose Key Name for Webserver",
+          "Type": "String"
+      },
+      "WebserverInstanceType": {
+          "Description": "Choose Instance Type for Webserver",
+          "Type": "String",
+          "AllowedValues": [
+            "t2.micro",
+            "t2.nano",
+            "t2.small"
+          ]
+      },
+      "WebserverAMIID": {
+          "Description": "Choose AMIID for Webserver",
+          "Type": "String"
+      }
+
+    },
+    "Mappings": {
+
+    },
+    "Conditions": {
+
+    },
+    "Resources": {
+
+    },
+    "Outputs": {
+
+    }
+}
